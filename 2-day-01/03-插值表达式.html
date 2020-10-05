@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ house }}</h1>
+      <h1>{{ obj.name }}</h1>
+      <h1>{{ obj.age }}</h1>
+      <h1>{{ obj.desc }}</h1>
+      <h1>{{ msg.toUpperCase() }}</h1>
+      <h1>{{ obj.age >= 18 ? "成年人" : "小屁孩儿" }}</h1>
+      <h1>{{ house }}</h1>
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+      const vm = new Vue({
+        el: "#app",
+        data: {
+          msg: "hello vue",
+          money: 100,
+          house: "新疆海景大别墅",
+          obj: {
+            name: "老铁",
+            age: "20",
+            desc: "没毛病"
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
